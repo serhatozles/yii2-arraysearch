@@ -1,6 +1,7 @@
 Advanced Array Search
 =====================
 This function is searching inside of array.
+See: https://github.com/serhatozles/ArrayAdvancedSearch
 
 Installation
 ------------
