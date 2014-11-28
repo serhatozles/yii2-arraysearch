@@ -11,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist serhatozles/yii2-arraysearch "*"
+php composer.phar require --prefer-dist serhatozles/yii2-arraysearch "dev-master"
 ```
 
 or add
 
 ```
-"serhatozles/yii2-arraysearch": "*"
+"serhatozles/yii2-arraysearch": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
