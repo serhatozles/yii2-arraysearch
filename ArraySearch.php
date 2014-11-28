@@ -3,11 +3,20 @@
 namespace serhatozles\arraysearch;
 
 /**
- * This is just an example.
+ *
+ * Yii2 ArraySearch
+ *
+ * Created for do to search inside of array.
+ * if you do $all is 1, all results will return to array 
+ *
+ * Author: serhatozles
+ * Mail: serhatozles@gmail.com
+ * 
+ * Örnek: \serhatozles\arraysearch\ArraySearch::q( array $dizi, string "key1 = 'bunaesitolmali1' and key2 >= 'bundanbuyukolmali' or key3 != 'bunaesitolmasin3'", int $all = 0 );
+ *
  */
-class ArraySearch extends \yii\helpers\Inflector
-{
-    
+class ArraySearch extends \yii\helpers\Inflector {
+
     static function q($SearchArray, $query, $all = 0, $Return = 'direct') {
 	$SearchArray = json_decode(json_encode($SearchArray), true);
 	$ResultArray = array();
@@ -66,5 +75,5 @@ class ArraySearch extends \yii\helpers\Inflector
 	}
 	return false;
     }
-    
+
 }
