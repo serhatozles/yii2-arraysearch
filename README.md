@@ -29,7 +29,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-$query		=	"a='Example World' and b>'2'";
+$query		=	"a='Example World' and b>='2'";
 
 $Array			=	array(
     'a' => array('d' => '2'),
