@@ -21,7 +21,7 @@ class ArraySearch extends \yii\helpers\Inflector {
 	$SearchArray = json_decode(json_encode($SearchArray), true);
 	$ResultArray = array();
 	if (is_array($SearchArray)) {
-	    $desen = "@[\s*]?[\'{1}]?([a-zA-Z\ç\Ç\ö\Ö\ş\Ş\ı\İ\ğ\Ğ\ü\Ü[:space:]0-9-_]*)[\'{1}]?[\s*]?(\<\=|\>\=|\=|\!\=|\<|\>)\s*[\'{1}]?([a-zA-Z\ç\Ç\ö\Ö\ş\Ş\ı\İ\ğ\Ğ\ü\Ü[:space:]0-9-_]*)[\'{1}]?[\s*]?(and|or|\&\&|\|\|)?@si";
+	    $desen = "@[\s*]?[\'{1}]?([a-zA-Z\ç\Ç\ö\Ö\ş\Ş\ı\İ\ğ\Ğ\ü\Ü[:space:]0-9-_]*)[\'{1}]?[\s*]?(\<\=|\>\=|\=|\!\=|\<|\>)\s*\'([a-zA-Z\ç\Ç\ö\Ö\ş\Ş\ı\İ\ğ\Ğ\ü\Ü[:space:]0-9-_]*)\'[\s*]?(and|or|\&\&|\|\|)?@si";
 	    $DonenSonuc = preg_match_all($desen, $query, $Result);
 	    if ($DonenSonuc) {
 		foreach ($SearchArray as $i => $ArrayElement) {
